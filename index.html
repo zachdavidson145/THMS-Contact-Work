@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pence Middle School — Sports Schedules & Contact Work</title>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#1f2937;
+      --radius:12px;
+    }
+
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+      background:var(--bg);
+      padding:10px;
+      color:var(--accent);
+      max-width:1200px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    h1,h2{margin-top:0}
+    .lead{color:var(--muted)}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 2px 4px rgba(0,0,0,.1);
+      margin-bottom:20px;
+      overflow-x:auto;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:400px;
+    }
+
+    th,td{
+      text-align:left;
+      padding:8px;
+      border-bottom:1px solid #ddd;
+      word-wrap: break-word;
+    }
+
+    th{background:#f0f0f0}
+
+    .map{
+      margin-top:12px;
+      border-radius:8px;
+      overflow:hidden;
+      border:1px solid #ddd;
+    }
+
+    .map iframe{
+      width:100%;
+      height:320px;
+      border:0;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width:768px){
+      body{padding:8px;}
+      h1{font-size:1.6rem;}
+      h2{font-size:1.4rem;}
+      th,td{padding:6px;font-size:0.9rem;}
+      .map iframe{height:240px;}
+    }
+
+    @media(max-width:600px){
+      table, thead, tbody, th, td, tr{display:block;}
+      th{position:absolute;top:-9999px;left:-9999px;}
+      td{border:none;position:relative;padding-left:50%; padding-top:6px; padding-bottom:6px;}
+      td:before{
+        position:absolute;
+        top:8px;
+        left:8px;
+        width:45%;
+        white-space:nowrap;
+        font-weight:bold;
+      }
+      td[data-label]:before{ content:attr(data-label); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pence Middle School — Sports Schedules & Contact Work</h1>
+
+  <!-- Volleyball Schedule -->
+  <section class="card">
+    <h2>🏐 Pence Middle School — Volleyball (2025–2026)</h2>
+    <p class="lead">All games begin at 4:30 PM.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Date">Sep 2, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 4, 2025</td><td data-label="Opponent">Montevideo</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 9, 2025</td><td data-label="Opponent">Elkton</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 11, 2025</td><td data-label="Opponent">J. Frank Hillyard</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 16, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 18, 2025</td><td data-label="Opponent">Montevideo</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 23, 2025</td><td data-label="Opponent">Elkton</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 25, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 30, 2025</td><td data-label="Opponent">J. Frank Hillyard</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Oct 2, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Oct 4, 2025 (Sat)</td><td data-label="Opponent">Massanutten District Tournament</td><td data-label="Location">Hosted by MMS @ Spotswood HS</td><td data-label="Time">TBA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Cross Country Schedule -->
+  <section class="card">
+    <h2>🏃 Pence Middle School — Cross Country (2025–2026)</h2>
+    <p class="lead">All meets start at 4:30 PM.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Opponent/Meet</th><th>Location</th><th>Time</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Date">Sep 4, 2025</td><td data-label="Opponent/Meet">Home w/ J. Frank Hillyard & Thomas Harrison</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 12, 2025</td><td data-label="Opponent/Meet">@ Elkton</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 18, 2025</td><td data-label="Opponent/Meet">@ Thomas Harrison</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Sep 25, 2025</td><td data-label="Opponent/Meet">Home w/ Montevideo & Thomas Harrison</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Oct 2, 2025</td><td data-label="Opponent/Meet">@ Montevideo</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Oct 8, 2025</td><td data-label="Opponent/Meet">Massanutten District Championship</td><td data-label="Location">Painter Park, Grottoes, VA</td><td data-label="Time">4:30 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Turner Ashby Varsity Football -->
+  <section class="card">
+    <h2>🏈 Turner Ashby High School — Varsity Football (2025–2026)</h2>
+    <p class="lead">Updated Varsity Football schedule for the 2025/2026 season.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Date">Aug 29, 2025</td><td data-label="Opponent">Spotswood</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 5, 2025</td><td data-label="Opponent">Waynesboro</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 12, 2025</td><td data-label="Opponent">Wilson Memorial</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 19, 2025</td><td data-label="Opponent">Madison County</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 26, 2025</td><td data-label="Opponent">Broadway</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Oct 3, 2025</td><td data-label="Opponent">William Monroe</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Oct 10, 2025</td><td data-label="Opponent">East Rockingham</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Oct 17, 2025</td><td data-label="Opponent">Harrisonburg</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Oct 24, 2025</td><td data-label="Opponent">Rocktown</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+          <tr><td data-label="Date">Nov 7, 2025</td><td data-label="Opponent">Pence Middle School</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">7:00 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Turner Ashby JV Football -->
+  <section class="card">
+    <h2>🏈 Turner Ashby High School — JV Football (2025–2026)</h2>
+    <p class="lead">Updated JV Football schedule for the 2025/2026 season. All games start at 6:00 PM unless noted.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Date">Aug 28, 2025</td><td data-label="Opponent">Spotswood</td><td data-label="Location">Away</td><td data-label="Time">6:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 3, 2025</td><td data-label="Opponent">Waynesboro</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">6:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 10, 2025</td><td data-label="Opponent">Wilson Memorial</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">6:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 18, 2025</td><td data-label="Opponent">Madison County</td><td data-label="Location">Away</td><td data-label="Time">6:00 PM</td></tr>
+          <tr><td data-label="Date">Sep 25, 2025</td><td data-label="Opponent">Broadway</td><td data-label="Location">Away</td><td data-label="Time">6:00 PM</td></tr>
+          <tr><td data-label="Date">Oct 2, 2025</td><td data-label="Opponent">William Monroe</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">6:45 PM</td></tr>
+          <tr><td data-label="Date">Oct 9, 2025</td><td data-label="Opponent">East Rockingham</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">6:45 PM</td></tr>
+          <tr><td data-label="Date">Oct 16, 2025</td><td data-label="Opponent">Harrisonburg</td><td data-label="Location">Away</td><td data-label="Time">6:45 PM</td></tr>
+          <tr><td data-label="Date">Oct 23, 2025</td><td data-label="Opponent">Rocktown</td><td data-label="Location">Away</td><td data-label="Time">6:45 PM</td></tr>
+          <tr><td data-label="Date">Nov 3, 2025</td><td data-label="Opponent">Pence Middle School</td><td data-label="Location">Home (Turner Ashby HS)</td><td data-label="Time">6:45 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Basketball Schedule -->
+  <section class="card">
+    <h2>🏀 Pence Middle School — Basketball (2025–2026)</h2>
+    <p class="lead">All games begin at 4:30 PM unless noted.</p>
+
+    <h3>Girls Schedule</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Date">Nov 20, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Nov 24, 2025</td><td data-label="Opponent">Hillyard</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 4, 2025</td><td data-label="Opponent">Elkton</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 8, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 11, 2025</td><td data-label="Opponent">Montevideo</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 15, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 18, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 8, 2026</td><td data-label="Opponent">Hillyard</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 12, 2026</td><td data-label="Opponent">Elkton</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 15, 2026</td><td data-label="Opponent">Montevideo</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 17, 2026</td><td data-label="Opponent">Massanutten District Championship</td><td data-label="Location">Rocktown High School</td><td data-label="Time">TBA</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Boys Schedule</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Date">Nov 20, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Nov 24, 2025</td><td data-label="Opponent">Hillyard</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 4, 2025</td><td data-label="Opponent">Elkton</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 8, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 11, 2025</td><td data-label="Opponent">Montevideo</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 15, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Dec 18, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 8, 2026</td><td data-label="Opponent">Hillyard</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 12, 2026</td><td data-label="Opponent">Elkton</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 15, 2026</td><td data-label="Opponent">Montevideo</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+          <tr><td data-label="Date">Jan 17, 2026</td><td data-label="Opponent">Massanutten District Championship</td><td data-label="Location">Harrisonburg High School</td><td data-label="Time">TBA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Contact Work Locations & Hours -->
+  <section class="card">
+    <h2>📍 Contact Work Locations & Hours</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Location</th><th>Hours</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Location">Sandy Bottom Park — Bridgewater</td><td data-label="Hours">Mon–Fri: 8:00 AM – 6:00 PM; Sat–Sun: 9:00 AM – 4:00 PM</td></tr>
+          <tr><td data-label="Location">Oakdale Park — Bridgewater</td><td data-label="Hours">Mon–Fri: 8:00 AM – 6:00 PM; Sat–Sun: 9:00 AM – 4:00 PM</td></tr>
+          <tr><td data-label="Location">Smileys Ice Cream — Bridgewater</td><td data-label="Hours">Mon–Thu: 12:00 PM – 10:00 PM; Fri–Sat: 12:00 PM – 11:00 PM; Sun: 12:00 PM – 9:00 PM</td></tr>
+          <tr><td data-label="Location">Mr. J's Bagels & Deli — S High Street, Harrisonburg</td><td data-label="Hours">Mon–Fri: 5:30 AM – 2:00 PM; Sat–Sun: 6:00 AM – 1:45 PM</td></tr>
+          <tr><td data-label="Location">Kline's Dairy Bar — S Main Street, Harrisonburg</td><td data-label="Hours">Mon–Sat: 10:30 AM – 10:00 PM; Sun: 11:30 AM – 10:00 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17yzYOdknWjTqLnzuZ_yW0EP6EWl82Uw&ehbc=2E312F" width="640" height="480"></iframe> allowfullscreen></iframe>
+    </div>
+  </section>
+
+</body>
+</html>
